@@ -1,0 +1,31 @@
+/* src/styles/coinrow.css */
+
+.coin-row {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.coin-row:hover {
+  transform: scale(1.02);
+  background-color: #262626;
+}
+
+/* Botones personalizados */
+.btn-favorite, .btn-portfolio, .btn-details {
+  border: none;
+  background: none;
+  color: #fff;
+}
+
+.btn-favorite:hover, .btn-portfolio:hover, .btn-details:hover {
+  opacity: 0.8;
+}
+
+.btn-details {
+  border: 1px solid #0B3D02;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-details:hover {
+  background-color: #0B3D02;
+}

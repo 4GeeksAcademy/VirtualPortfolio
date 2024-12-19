@@ -1,0 +1,251 @@
+/* coinDetail.css */
+
+.coin-detail-container {
+  background-color: #1F2A1C; /* Verde militar muy oscuro */
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.coin-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Columna Izquierda */
+.left-panel {
+  background-color: #2B3A2E; /* un tono mas claro */
+  border-radius: 10px;
+  padding: 20px;
+  flex: 0 0 350px; /* ancho fijo para la col izq */
+}
+
+.coin-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.coin-header img {
+  width: 50px;
+  height: 50px;
+}
+
+.coin-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.coin-header p {
+  margin: 0;
+  color: #dcdcdc;
+  font-size: 0.9rem;
+}
+
+/* Precio */
+.price-big {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b1d8b7;
+  margin-bottom: 10px;
+}
+
+.price-change {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.price-change.negative {
+  color: #ff8f8f;
+}
+
+.price-change.positive {
+  color: #b1d8b7;
+}
+
+/* Stats Boxes */
+.stats-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stats-box {
+  background-color: #3A4C36;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.stats-box h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b1d8b7;
+}
+
+.stats-box p {
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: #dcdcdc;
+}
+
+/* Secciones info en el lado izquierdo */
+.info-section {
+  margin-bottom: 20px;
+}
+
+.info-section h5 {
+  margin-bottom: 10px;
+  color: #b1d8b7;
+  font-size: 1rem;
+}
+
+.info-section a,
+.info-section p,
+.info-section span {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.converter {
+  background-color: #3A4C36;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.converter h6 {
+  margin:0 0 10px 0;
+  color: #b1d8b7;
+  font-size: 0.9rem;
+}
+
+.converter input {
+  width: 100%;
+  background-color: #2B3A2E;
+  border: 1px solid #3f3f3f;
+  color: #ffffff;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.performance h5 {
+  margin-bottom: 10px;
+  color: #b1d8b7;
+}
+
+/* Columna derecha */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tabs en la derecha */
+.tabs-bar {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #3f3f3f;
+  padding-bottom: 10px;
+}
+
+.tab-right {
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.tab-right:hover {
+  border-bottom: 3px solid #b1d8b7;
+}
+
+/* Barra de intervalos y tipo de gráfico */
+.chart-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.chart-toolbar button {
+  background: #3A4C36;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.chart-toolbar button.active {
+  background: #b1d8b7;
+  color: #1F2A1C;
+}
+
+/* Chart Area */
+.chart-area {
+  background-color: #2B3A2E;
+  border-radius: 10px;
+  height: 400px; 
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.chart-area p {
+  color: #dcdcdc;
+}
+
+/* Markets table */
+.markets-table {
+  background-color: #2B3A2E;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.markets-table h5 {
+  color: #b1d8b7;
+  margin-bottom: 20px;
+}
+
+.markets-header, .market-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.markets-header {
+  border-bottom: 1px solid #3f3f3f;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #b1d8b7;
+}
+
+.market-row {
+  background-color: #3A4C36;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.market-row:hover {
+  background-color: #465E41;
+}
+
+.market-row p {
+  margin: 0;
+  font-size: 0.9rem;
+}
